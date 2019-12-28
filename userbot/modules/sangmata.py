@@ -10,7 +10,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 from telethon.tl.functions.account import UpdateNotifySettingsRequest
 from userbot import bot, CMD_HELP
 from userbot.events import register
-from userbot.modules.admin
+
 
 @register(outgoing=True, pattern=r"^.sg$( ?(.*)")
 async def _(event):
