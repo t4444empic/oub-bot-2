@@ -114,5 +114,5 @@ async def _(event):
  "CMD_HELP .update({
                     "sangmata":
                    ".sangmata_bot\
-                    \nUsage: .sg
-                       "})                                      
+                    \nUsage: .sg "})
+                                                             
