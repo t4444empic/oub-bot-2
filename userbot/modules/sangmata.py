@@ -118,4 +118,4 @@ async def _(event):
                     \n\n -fakemail
                     \nUsage: .fakemail
                     \n\n -ub
-                    \nUsage: .ub"      })                                      
+                    \nUsage: .ub" })                                      
