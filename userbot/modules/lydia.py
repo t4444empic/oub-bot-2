@@ -10,7 +10,7 @@ Userbot module to help you manage a group
 
 import coffeehouse
 import asyncio
-from userbot import LYDIA_API_KEY
+from userbot import LYDIA_API_KEY, CMD_HELP
 from userbot.events import register
 from telethon import events
 
