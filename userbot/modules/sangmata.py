@@ -115,7 +115,4 @@ async def _(event):
                     "sangmata":
                    ".sangmata_bot\
                     \nUsage: .sg
-                    \n\n -fakemail
-                    \nUsage: .fakemail
-                    \n\n -ub
-                    \nUsage: .ub" })                                      
+                       "})                                      
