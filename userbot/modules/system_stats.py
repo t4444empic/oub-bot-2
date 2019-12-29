@@ -119,7 +119,7 @@ async def pipcheck(pip):
         await pip.edit("`Use .help pip to see an example`")
 
 
-@register(outgoing=True, pattern="^.on$")
+@register(outgoing=True, pattern="^.p$")
 async def amireallyalive(on):
     """ For .on command, check if the bot is running.  """
     await on.edit("`"
