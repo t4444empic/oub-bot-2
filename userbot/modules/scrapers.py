@@ -179,7 +179,7 @@ async def moni(event):
         return
 
 
-@register(outgoing=True, pattern=r"^.google (.*)")
+@register(outgoing=True, pattern=r"^.g (.*)")
 async def gsearch(q_event):
     """ For .google command, do a Google search. """
     match = q_event.pattern_match.group(1)
@@ -702,7 +702,7 @@ CMD_HELP.update({
         \nUsage: Beautify your code using carbon.now.sh\nUse .crblang <text> to set language for your code.'
 })
 CMD_HELP.update(
-    {'google': '.google <query>\
+    {'g': '.google <query>\
         \nUsage: Does a search on Google.'})
 CMD_HELP.update(
     {'wiki': '.wiki <query>\
