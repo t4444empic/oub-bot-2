@@ -5,7 +5,7 @@ Userbot module to use an AI To respond to people
 
 import coffeehouse
 import asyncio
-<<<<<<< HEAD
+
 from userbot import LYDIA_API_KEY, CMD_HELP
 =======
 from userbot import LYDIA_API_KEY
