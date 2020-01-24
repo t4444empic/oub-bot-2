@@ -1,20 +1,23 @@
-# Copyright (C) 2019 The Raphielscape Company LLC.
-#
-# Licensed under the Raphielscape Public License, Version 1.c (the "License");
-# you may not use this file except in compliance with the License.
-# credit goes to @snapdragon and @devpatel_73 for making it work on this userbot.
-#
+
 """
-Userbot module to help you manage a group
+Userbot module to use an AI To respond to people
 """
 
 import coffeehouse
 import asyncio
+<<<<<<< HEAD
 from userbot import LYDIA_API_KEY, CMD_HELP
+=======
+from userbot import LYDIA_API_KEY
+
+from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, bot
+
+
+>>>>>>> ad36bb8f871064a8b9438b81f32dfb2f02debd15
 from userbot.events import register
 from telethon import events
 
-# Non-SQL Mode
+
 ACC_LYDIA = {}
 SESSION_ID = {}
 
