@@ -7,7 +7,7 @@ import coffeehouse
 import asyncio
 
 from userbot import LYDIA_API_KEY, CMD_HELP
-=======
+
 from userbot import LYDIA_API_KEY
 
 from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, bot
