@@ -13,7 +13,7 @@ from userbot import LYDIA_API_KEY
 from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP, bot
 
 
->>>>>>> ad36bb8f871064a8b9438b81f32dfb2f02debd15
+
 from userbot.events import register
 from telethon import events
 
