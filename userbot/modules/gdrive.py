@@ -214,7 +214,7 @@ async def gdrive_search_list(event):
     pattern=
     r"^.gsetf https?://drive\.google\.com/drive/u/\d/folders/([-\w]{25,})",
     outgoing=True)
-@errors_handler
+
 async def download(set):
     """For .gsetf command, allows you to set path"""
     await set.edit("Processing ...")
@@ -241,7 +241,7 @@ async def download(gclr):
 
 
 @register(pattern="^.gfolder$", outgoing=True)
-@errors_handler
+
 async def show_current_gdrove_folder(event):
     if parent_id:
         folder_link = f"https://drive.google.com/drive/folders/" + parent_id
