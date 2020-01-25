@@ -41,7 +41,7 @@ G_DRIVE_DIR_MIME_TYPE = "application/vnd.google-apps.folder"
 
 
 @register(pattern=r"^.gdrive(?: |$)(.*)", outgoing=True)
-@errors_handler
+
 async def gdrive_upload_function(dryb):
     """ For .gdrive command, upload files to google drive. """
     await dryb.edit("Processing ...")
@@ -155,7 +155,7 @@ async def gdrive_upload_function(dryb):
 
 
 @register(pattern=r"^.ggd(?: |$)(.*)", outgoing=True)
-@errors_handler
+
 async def upload_dir_to_gdrive(event):
     await event.edit("Processing ...")
     if CLIENT_ID is None or CLIENT_SECRET is None:
@@ -186,7 +186,7 @@ async def upload_dir_to_gdrive(event):
 
 
 @register(pattern=r"^.list(?: |$)(.*)", outgoing=True)
-@errors_handler
+
 async def gdrive_search_list(event):
     await event.edit("Processing ...")
     if CLIENT_ID is None or CLIENT_SECRET is None:
@@ -232,7 +232,7 @@ async def download(set):
 
 
 @register(pattern="^.gsetclear$", outgoing=True)
-@errors_handler
+
 async def download(gclr):
     """For .gsetclear command, allows you clear ur curnt custom path"""
     await gclr.reply("Processing ...")
