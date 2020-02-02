@@ -124,7 +124,7 @@ async def amireallyalive(on):
     """ For .on command, check if the bot is running.  """
     await on.edit("`"
                      f"Jalankaki \n" 
-                     f"U: {DEFAULTUSER}"
+                     f"U: {DEFAULTUSER} \n"
                      f"T={version.__version__} \n"
                      f"P={python_version()} \n"
                      "×××××Yes My Bot Running^__^×××××"
