@@ -129,7 +129,7 @@ async def amireallyalive(on):
                      f"Python={python_version()} \n"
                      "============= \n"
                      "Hello everyone! \n"
-                     "=============
+                     "============="
                      "`")    
 
 
