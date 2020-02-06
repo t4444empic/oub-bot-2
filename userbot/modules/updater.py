@@ -26,7 +26,7 @@ async def gen_chlog(repo, diff):
 
 
 async def is_off_br(br):
-    off_br = ['sql-extended']
+    off_br = ['master']
     for k in off_br:
         if k == br:
             return 1
