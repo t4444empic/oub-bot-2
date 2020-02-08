@@ -151,8 +151,8 @@ async def amireallyalive(alive):
                      f"Admin: @Three_Cube_TeKnoways \n"
                      " \n\n"
                      f"Userbot: @testing_userbot "
->>>>>>> 9e6fe749ae2a972a3efe50f75ed61bc0f721652d
-                     "`")    
+
+                     "`")
 
 
 
