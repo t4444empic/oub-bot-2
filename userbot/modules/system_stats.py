@@ -131,7 +131,7 @@ async def amireallyalive(on):
                      "============= \n"
                      "Hello everyone! \n"
                      "============="
-=======
+
 @register(outgoing=True, pattern="^.alive$")
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
