@@ -48,14 +48,10 @@ async def update_requirements():
 async def upstream(ups):
     "For .update command, check if the bot is up to date, update if specified"
     await ups.edit("`Checking for updates, please wait....`")
-<<<<<<< HEAD
-    conf = ups.pattern_match.group(1).lower()
-    off_repo = 'https://github.com/mkaraniya/OpenUserBot'
-=======
+
     conf = ups.pattern_match.group(1)
     off_repo = UPSTREAM_REPO_URL
     force_update = False
->>>>>>> 9e6fe749ae2a972a3efe50f75ed61bc0f721652d
 
     try:
         txt = "`Oops.. Updater cannot continue due to "
