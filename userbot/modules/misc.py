@@ -88,7 +88,7 @@ async def bot_support(wannahelp):
     """ For .support command, just returns the group link. """
     await wannahelp.edit(
         "Join the OpenUserBot Channel: [HERE](https://t.me/userbotindocloud) \
-        \nJoin the OpenUserBot Chat: [HERE](https://t.me/userbotindo)"
+        \nJoin the OpenUserBot Chat: [HERE](https://t.me/userbotindo)")
 
 
 @register(outgoing=True, pattern="^.creator$")
