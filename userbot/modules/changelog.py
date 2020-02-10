@@ -37,7 +37,7 @@ async def is_off_br(br):
 async def chtream(ch):
     "For .update command, check if the bot is up to date, update if specified"
     await ch.edit("`Checking for updates, please wait....`")
-   conf = ch.pattern_match.group(1).lower()
+    conf = ch.pattern_match.group(1).lower()
     off_repo = 'https://github.com/GudMeong/oub-bot-2.git'
 
     try:
