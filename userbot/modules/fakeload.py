@@ -10,7 +10,7 @@ from userbot.events import register
 async def typewriter(typew):
 	message = typew.pattern_match.group(1)
 	await typew.edit("`start loading makan tokek goreng!...`")
-	sleep(1)
+	sleep(4)
 	await typew.edit("0%")
 	number = 1
 	await typew.edit(str(number) + "%   ▎")
