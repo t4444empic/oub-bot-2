@@ -130,6 +130,7 @@ async def amireallyalive(on):
                      f"Python   ={python_version()} \n\n`"
                      "============= \n"
                      "Hello everyone its [ME](https://t.me/flashfw) \n"
+                     "Powered by [Heroku](https://www.heroku.com) \n"
                      "============="
 
                                          "")
