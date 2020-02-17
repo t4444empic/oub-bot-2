@@ -312,7 +312,7 @@ async def typewriter(typew):
 	sleep(0.03)
 	await typew.edit(str(number) + "%   ████████████████▌")
 	sleep(1)
-	await typew.edit("Tokek Goreng Siap di Santap! Jangan lupa Menu penutup nya [DISINI](http://javbus.com)")
+	await typew.edit("Tokek Goreng Siap di Santap! Jangan lupa Menu penutup nya [DISINI](http://javbus.com) jangan lupa pakai [NASI](https://xnxx.com) Nya!")
 	# I did it for two hours :D just ctrl+c - crtl+v
 
 
