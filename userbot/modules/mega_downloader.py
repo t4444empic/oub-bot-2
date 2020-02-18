@@ -31,15 +31,17 @@ from userbot.events import register
 
 
 def subprocess_run(cmd):
+    reply = ''
     subproc = Popen(cmd, stdout=PIPE, stderr=PIPE,
                     shell=True, universal_newlines=True)
     talk = subproc.communicate()
     exitCode = subproc.returncode
     if exitCode != 0:
-        print('An error was detected while running the subprocess:\n'
-              'exit code: %d\n'
-              'stdout: %s\n'
-              'stderr: %s' % (exitCode, talk[0], talk[1]))
+        reply += ('An error was detected while running the subprocess:\n'
+                  f'exit code: {exitCode}\n'
+                  f'stdout: {talk[0]}\n'
+                  f'stderr: {talk[1]}')
+        return reply
     return talk
 
 
@@ -75,7 +77,6 @@ def mega_download(url: str) -> str:
     result = subprocess_run(cmd)
     try:
         data = json.loads(result[0])
-        print(data)
     except json.JSONDecodeError:
         reply += "`Error: Can't extract the link`\n"
         return reply
@@ -96,10 +97,12 @@ def mega_download(url: str) -> str:
 
 
 def encrypt_file(file_name, file_hex, file_raw_hex):
-    os.rename(file_name, f"old_{file_name}")
-    cmd = f"cat old_{file_name} | openssl enc -d -aes-128-ctr -K {file_hex} -iv {file_raw_hex} > {file_name}"
+    os.rename(file_name, f'old_"{file_name}"')
+    cmd = (f'cat old_{file_name} | '
+           f'openssl enc -d -aes-128-ctr -K {file_hex} -iv {file_raw_hex} > '
+           f'"{file_name}"')
     subprocess_run(cmd)
-    os.remove(f"old_{file_name}")
+    os.remove(f'old_"{file_name}"')
     return
 
 
